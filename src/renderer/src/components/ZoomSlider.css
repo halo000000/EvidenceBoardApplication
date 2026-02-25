@@ -1,0 +1,50 @@
+.zoom-slider-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #1e1e1e;
+  border: 1px solid #2e2e2e;
+  border-radius: 2px;
+  padding: 8px 16px;
+  z-index: 100;
+}
+
+.zoom-slider {
+  width: 200px;
+  height: 4px;
+  border-radius: 2px;
+  background: #2e2e2e;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.zoom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #4a9eff;
+  cursor: pointer;
+  border: 2px solid #1e1e1e;
+}
+
+.zoom-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #4a9eff;
+  cursor: pointer;
+  border: 2px solid #1e1e1e;
+}
+
+.zoom-value {
+  color: #e0e0e0;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 48px;
+  text-align: right;
+}
